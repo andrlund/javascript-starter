@@ -1,0 +1,31 @@
+{
+  "name": "javascript-starter",
+  "version": "1.0.0",
+  "description": "A bare bones JavaScript starter project",
+  "main": "index.js",
+  "dependencies": {
+    "rxjs": "^7.1.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.7.0",
+    "karma": "^6.3.2",
+    "karma-jasmine": "^4.0.1",
+    "rollup": "^2.49.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup ./src/app.js --file ./dist/app.js --format cjs",
+    "run": "node ./dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrlund/javascript-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrlund/javascript-starter/issues"
+  },
+  "homepage": "https://github.com/andrlund/javascript-starter#readme"
+}
