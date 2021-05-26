@@ -4,18 +4,19 @@
   "description": "A bare bones JavaScript starter project",
   "main": "index.js",
   "dependencies": {
-    "rxjs": "^7.1.0"
   },
   "devDependencies": {
     "jasmine": "^3.7.0",
-    "karma": "^6.3.2",
-    "karma-jasmine": "^4.0.1",
+    "jasmine-console-reporter": "^3.1.0",
+    "nodemon": "^2.0.7",
     "rollup": "^2.49.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run -s test:build && npm run -s test:run",
+    "test:build": "rollup ./test/test.spec.js --file ./test/bundle.spec.js --format cjs --watch",
+    "test:run": "nodemon --exec \"jasmine --config=./jasmine.json --reporter=jasmine-console-reporter\"",
     "build": "rollup ./src/app.js --file ./dist/app.js --format cjs",
-    "run": "node ./dist/app.js"
+    "start": "node ./dist/app.js"
   },
   "repository": {
     "type": "git",
