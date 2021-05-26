@@ -1,5 +1,5 @@
 # Javascript-starter
- A bare bones NodeJS, JavaScript starter project. It uses (Rollup)[https://rollupjs.org/guide/en/] for module bundling and (Jasmine)[https://jasmine.github.io/] for testing. Please note, this project is not meant for development of apps meant to run in a browser.
+ A bare bones NodeJS, JavaScript starter project with testing. It uses (Rollup)[https://rollupjs.org/guide/en/] for module bundling and (Jasmine)[https://jasmine.github.io/] for testing. Please note, this project is not meant for development of apps meant to run in a browser.
 
  ## Installation
 
@@ -9,6 +9,8 @@
 npm install
 ```
 ## Build
+
+The starting point for your code is ./src/app.js and are built/bundled by:
 
 ```bash
 npm run build
